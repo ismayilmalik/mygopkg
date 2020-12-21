@@ -12,3 +12,14 @@ func TestAdd(t *testing.T)  {
 	}
 
 }
+
+func TestMultiply(t *testing.T)  {
+	expected := 25
+	num1 := 5
+	num2 := 5
+
+	if result := Multiply(num1, num2); result != expected {
+		t.Errorf("Expected %d but got %d", expected, result)
+	}
+
+}
